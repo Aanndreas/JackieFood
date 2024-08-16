@@ -19,6 +19,11 @@ const FoodGenerator = () => {
     } else {
       setChosenDish(foodList[randomIndex]);
     }
+    if (setChosenDish.name === "Fettuccine Alfredo") {
+      setShowMustache(true);
+    } else {
+      setShowMustache(false);
+    }
   };
 
   return (

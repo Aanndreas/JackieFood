@@ -30,6 +30,15 @@ section {
 ul {
   list-style: none;
   padding: 0;
+  margin: auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+li {
+  width: 45%;
 }
 
 .jackie {
@@ -52,6 +61,20 @@ ul {
   margin-top: 0;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+.ingredient_item {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+  margin-bottom: 5px;
+}
+
+.many_ingredients {
+  width: 100%;
+  max-height: 500px;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 h2 {

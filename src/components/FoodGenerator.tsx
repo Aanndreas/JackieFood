@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { foodList } from "../FoodItems";
 import jackie from "../images/jackie.png";
-import moustache from "../images/mustache.svg";
+import mustache from "../images/mustache.svg";
 import IFoodItem from "../models/IFoodItem";
 import { DisplayDish } from "./DisplayDish";
 import { Button } from "./Button";
@@ -18,11 +18,11 @@ const FoodGenerator = () => {
       generateOnClick();
     } else {
       setChosenDish(foodList[randomIndex]);
-    }
-    if (setChosenDish.name === "Fettuccine Alfredo") {
-      setShowMustache(true);
-    } else {
-      setShowMustache(false);
+      if (randomIndex === 4) {
+        setShowMustache(true);
+      } else {
+        setShowMustache(false);
+      }
     }
   };
 
@@ -35,8 +35,9 @@ const FoodGenerator = () => {
         src={jackie}
         alt="Jackie with an italian hat"
       />
-      {showMustache && <img src={moustache} alt="a black mustache" />}
-      <img src={moustache} alt="a black moustache" className="mustache" />
+      {showMustache && (
+        <img src={mustache} alt="a black mustache" className="mustache" />
+      )}
       <Button generateDish={generateOnClick}></Button>
       <DisplayDish dish={chosenDish}></DisplayDish>
     </section>

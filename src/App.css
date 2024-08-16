@@ -34,7 +34,13 @@ ul {
 
 .jackie {
   position: absolute;
-  left: 0;
+  left: -8rem;
+  bottom: 0;
+}
+
+.moustache {
+  position: absolute;
+  left: -8rem;
   bottom: 0;
 }
 

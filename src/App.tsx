@@ -1,13 +1,12 @@
-import './App.css'
-import FoodGenerator from './components/FoodGenerator'
+import "./App.css";
+import FoodGenerator from "./components/FoodGenerator";
 
 function App() {
-
   return (
     <>
-      <FoodGenerator/>
+      <FoodGenerator />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

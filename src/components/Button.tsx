@@ -5,7 +5,7 @@ interface IGenerateDish {
 export const Button = ({ generateDish }: IGenerateDish) => {
   return (
     <button type="button" onClick={generateDish}>
-      Generate dish
+      <span className="button_text">Generate dish</span>
     </button>
   );
 };
